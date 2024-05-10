@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react';
 
 const poppins = Poppins({ subsets: ['latin'], weight: '400' });
 
-const BASE_URL = 'http://localhost:3000/api';
+const BASE_URL = 'https://project-quiz-silk.vercel.app/api';
 export default function Home() {
   const [idsWithQuestions, setIdsWithQuestions] = useState<number[]>([]);
   const [question, setQuestion] = useState<QuestionModel>({} as QuestionModel);
